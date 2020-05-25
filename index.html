@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="description" content="" />
+<title>커넥츠 gnb,snb</title>
+<link rel="stylesheet" href="css/gnb.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/conects.js"></script>
+</head>
+
+<body>
+<!-- skipnavi -->
+<div class="skipnavi">
+	<a href="#gnb">메뉴 바로가기</a>
+	<a href="#snb_wrap">좌측 메뉴 바로가기</a>
+	<a href="#content_wrap">본문 바로가기</a>
+</div>
+<!-- // skipnavi -->
+<!-- popup_wrap -->
+<div class="popup_wrap" tabindex="0">
+	<div class="popup_dim"></div>
+	<div class="inter_popup">
+		<h3 class="ask">
+			<span class="user_name">김동현님</span> 어떤 분야에 관심 있으신가요?<br>
+			<strong>관심사</strong>를 선택하고, 맨 아래의 <strong>관심사 저장하기</strong>를 눌러보세요!
+		</h3>
+		<dl class="inter_menu">
+			<dt>School</dt>
+			<dd class="on"><a href="#">유&middot;초등</a></dd>
+			<dd><a href="#">초등학교</a></dd>
+			<dd><a href="#">중등&middot;특목</a></dd>
+			<dd><a href="#">대입&middot;수능</a></dd>
+		</dl>
+		<dl class="inter_menu">
+			<dt>University</dt>
+			<dd><a href="#">취업</a></dd>
+			<dd><a href="#">공무원&middot;임용</a></dd>
+			<dd><a href="#">어학&middot;회화</a></dd>
+			<dd><a href="#">임용고시</a></dd>
+		</dl>
+		<dl class="inter_menu">
+			<dt>Career</dt>
+			<dd><a href="#">직무&middot;스타트업</a></dd>
+			<dd><a href="#">전문직</a></dd>
+			<dd><a href="#">공인중개사</a></dd>
+			<dd><a href="#">자격증</a></dd>
+			<dd><a href="#">노무사</a></dd>
+			<dd><a href="#">법무사</a></dd>
+			<dd><a href="#">관세사</a></dd>
+			<dd><a href="#">감평사</a></dd>
+			<dd><a href="#">뷰티아카데미</a></dd>
+		</dl>
+		<dl class="inter_menu">
+			<dt>Life</dt>
+			<dd><a href="#">라이프&middot;취미</a></dd>
+			<dd><a href="#">독서</a></dd>
+			<dd><a href="#">반려동물</a></dd>
+			<dd><a href="#">뷰티</a></dd>
+			<dd><a href="#">취미</a></dd>
+		</dl>
+		<a href="#" class="inter_save_btn">관심사 저장하기</a>
+		<a href="#" class="inter_close_btn">팝업창 닫기</a>
+	</div>
+</div>
+<!-- // popup_wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<div id="header" class="header">
+		<!-- gnb -->
+		<div id="gnb" class="gnb clearfix">
+			<h1 class="logo"><a href="https://www.conects.com/">커넥츠</a></h1>
+			<!-- search_box -->
+			<div class="search_box">
+				<label for="total_search" class="skip">통합검색창</label>
+				<input type="text" id="total_search" class="total_search" placeholder="학원과 독서실을 검색해보세요">
+				<label for="btn_total_search" class="skip">통합검색창 버튼</label>
+				<input type="submit" id="btn_total_search" class="btn_total_search" value="검색 버튼">
+			</div>
+			<!-- // search_box -->
+			
+			<!-- category_box -->
+			<div class="category_box">
+				<h2 class="skip">카테고리</h2>
+				<p class="category_tit">
+					<a href="#">어학&middot;회화</a>
+				</p>
+				<div class="category">
+					<a href="#" class="select">영단기토익</a>
+					<ul class="category_list">
+						<li><a href="https://eng.conects.com/" target="_self">영단기토익</a></li>
+						<li><a href="https://soridream.conects.com/" target="_self">소리드림</a></li>
+						<li><a href="https://speaking.conects.com/?from_url=sky" target="_self">디즈니 회화</a></li>
+						<li><a href="https://china.conects.com/" target="_self">중국어</a></li>
+						<li><a href="https://japan.conects.com/" target="_self">일본어</a></li>
+						<li><a href="https://eng.conects.com/toefl" target="_self">영단기토플</a></li>
+						<li><a href="https://eng.conects.com/tos/main" target="_self">영단기토스/오픽</a></li>
+						<li><a href="https://eng.conects.com/flightattendant/teaser" target="_self">승무원영어면접</a></li>
+						<li><a href="https://eng.conects.com/main/teps" target="_self">영단기텝스</a></li>
+						<li><a href="https://eng.conects.com/ielts/promotion/ielts_renewal" target="_self">영단기아이엘츠</a></li>
+						<li><a href="https://gmat.conects.com/" target="_self">GMAT/GRE단기</a></li>
+						<li><a href="https://global.conects.com/france/main/main/main_pc" target="_self">프랑스어</a></li>
+						<li><a href="https://3eng.conects.com/3eng/main/main/main_pc" target="_self">세마디 영어</a></li>
+						<li><a href="https://baro.conects.com/" target="_self">기초영어</a></li>
+						<li><a href="http://www.princetonreviewprep.com/" target="_blank">SAT/ACT</a></li>
+						<li><a href="https://tpr.dangi.co.kr/" target="_blank">SAT/ACT학원</a></li>
+						<li><a href="https://offeng.conects.com/" target="_self">영단기강남학원</a></li>
+						<li><a href="https://offeng.conects.com/busan" target="_self">영단기부산학원</a></li>
+						<li><a href="https://offeng.conects.com/china" target="_self">중단기강남학원</a></li>
+						<li><a href="https://offeng.conects.com/busan_china" target="_self">중단기부산학원</a></li>
+						<li><a href="https://directenglish.conects.com/" target="_self">원어민1:1회화학원</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // category_box -->
+			
+			<!-- interest_box -->
+			<div class="interpos">
+				<div class="inter_wrap">
+					<div class="interest_box">
+						<ul class="interest clearfix">
+							<li><a href="#">유&middot;초등</a></li>
+							<li><a href="#">대입&middot;수능</a></li>
+							<li><a href="#">취업</a></li>
+							<li><a href="#">공무원&middot;임용</a></li>
+							<li><a href="#">직무&middot;스타트업</a></li>
+							<li><a href="#">전문직</a></li>
+							<li><a href="#">라이프&middot;취미</a></li>
+						</ul>
+						<div class="inter_plus">
+							<a href="#" title="클릭시 팝업창 열림">관심사를 추가해보세요</a>
+						</div>
+					</div>
+				</div>
+				<!-- 너비에 따라서 노출 되는거 결정 -->
+				<div class="inter_btn">
+					<a href="#" class="inter_left_btn">왼쪽으로 이동</a>
+					<a href="#" class="inter_right_btn">오른쪽으로 이동</a>
+				</div>
+			</div>
+			<!-- // interest_box -->
+			
+			<!-- top_menu_box -->
+			<div class="top_menu_box">
+				<h2 class="skip">로그인</h2>
+				<ul class="top_menu_list clearfix">
+					<!-- 비 로그인시 -->
+					<!-- <li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li> 
+					<li><a href="#">장바구니</a></li> -->
+					<!-- // 비 로그인시 -->
+
+					<!-- 로그인시 -->
+					<li>
+						<a href="#" class="login"><span class="user_name">김동현</span>님</a>
+						<div class="user_info notice_box">
+							<strong><span class="user_name"><a href="#">김동현</a></span>님</strong>
+							<ul class="user_info_list">
+								<li><a href="#">내 정보</a></li>
+								<li><a href="#">활동내역</a></li>
+								<li><a href="#">수강내역</a></li>
+								<li><a href="#">로그아웃</a></li>
+							</ul>
+						</div>
+						<span class="dummy"></span>
+					</li>
+					<li>
+						<a href="#" class="notice" title="클릭시 알림창 열림">알림</a>
+						<div class="user_notice notice_box">
+							<h4 class="tit">알림</h4>
+							<ul class="user_info_list">
+								<!-- 알림이 없을 때 -->
+								<!-- <li class="no_notice">새로운 알림이 없습니다.</li> -->
+								<!-- // 알림이 없을 때 -->
+								<li><a href="#">알림1</a></li>
+								<li><a href="#">알림2</a></li>
+								<li><a href="#">알림3</a></li>
+								<li><a href="#">알림4</a></li>
+							</ul>
+							<a href="#" class="all_notice_btn">알림 전체보기 ></a>
+						</div>
+						<span class="dummy"></span>
+					</li>
+					<li><a href="#">장바구니</a></li>
+					<li><a href="#">주문&middot;배송내역</a></li>
+					<!-- // 로그인시 -->
+					<li><a href="#">고객섬김센터</a></li>
+					<li><a href="#">내보관함</a></li>
+				</ul>
+			</div>
+			<!-- // top_menu_box -->
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="content">
+			<!-- snb_wrap -->
+			<div id="snb_wrap" class="snb_wrap">
+				<h2 class="skip">커넥츠 관련 슬라이드</h2>
+				<!-- snb_banner -->
+				<div class="snb_banner">
+					<ul class="snb_banner_slide">
+						<li><a href="#" target="_blank" title="새창으로 이동"><img src="img/ban_190620.jpg" alt="영단기,일단기,중단기,디즈니회화 전강좌 9,900원으로 무제한"></a></li>
+						<li><a href="#" target="_blank" title="새창으로 이동"><img src="img/ban_skyedu_190626.jpg" alt="스카이에듀 월 9,900원"></a></li>
+						<li><a href="#" target="_blank" title="새창으로 이동"><img src="img/ban-quest-190830.png" alt="9월 퀘스트 도전하고 아이패드 받자"></a></li>
+					</ul>
+					<div class="banner_btn">
+						<a href="#" class="banner_prev">이전 배너 보기</a>
+						<a href="#" class="banner_next">다음 배너 보기</a>
+						<a href="#" class="banner_stop skip">배너 정지</a>
+						<a href="#" class="banner_play skip">배너 시작</a>
+					</div>
+				</div>
+				<!-- // snb_banner -->
+
+				<!-- main_link -->
+				<div class="main_link">
+					<a href="#">
+						<span class="class_name">영단기토익</span><br>
+						메인가기
+					</a>
+				</div>
+				<!-- // main_link -->
+
+				<!-- snb_menu -->
+				<div class="snb_menu">
+					<dl class="snb_menu_list">
+						<dt class="snb_menu_tit">함께해요</dt>
+						<dd><a href="#" class="study_meeting new">스터디 / 모임</a></dd>
+						<dd><a href="#" class="pass">합격선배</a></dd>
+						<dd><a href="#" class="diary">공부일기</a></dd>
+					</dl>
+					<dl class="snb_menu_list">
+						<dt class="snb_menu_tit">물어봐요</dt>
+						<dd><a href="#" class="qna">Q&A</a></dd>
+						<dd><a href="#" class="chat new">대나무숲</a></dd>
+						<dd><a href="#" class="ai">미래예측</a></dd>
+					</dl>
+					<dl class="snb_menu_list">
+						<dt class="snb_menu_tit">배워봐요</dt>
+						<dd><a href="#" class="academy new">학원</a></dd>
+						<dd><a href="#" class="reading_room">독서실</a></dd>
+					</dl>
+					<dl class="snb_menu_list">
+						<dt class="snb_menu_tit">비밀이에요<span class="event_badge">event</span></dt>
+						<dd><a href="#" class="secret_clan new">비밀모임</a></dd>
+						<dd><a href="#" class="secret_data">비밀자료</a></dd>
+					</dl>
+					<dl class="snb_menu_list">
+						<dt class="snb_menu_tit link"><a href="#">베스트</a></dt>
+						<dd class="family_site">
+							<h4 class="sub_tit">FAMILY SITE</h4>
+							<ul class="best_menu_list">
+								<li><a href="#">커넥츠북</a></li>
+								<li><a href="#">공부장소</a></li>
+								<li><a href="#">커넥츠 디바이스</a></li>
+								<li><a href="#">커넥츠튜터</a></li>
+								<li><a href="#">튜터닷컴</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<div class="ceo_banner">
+						<a href="#" target="_blank" title="새창으로 이동"><img src="img/snb/ban_ceo.gif" alt="대표에게 바란다. 회원님의 목소리를 들려주세요"></a>
+					</div>
+				</div>
+				<!-- snb_menu -->
+			</div>
+			<!-- // snb_wrap -->
+
+			<!-- content_wrap -->
+			<div id="content_wrap" class="content_wrap">
+				<!-- title_wrap -->
+				<div class="title_wrap">
+					<div class="dangi_gnb_wrap clearfix">
+						<h2 class="dangi_logo"><a href="#">영단기</a></h2>
+						<ul class="dangi_gnb">
+							<li>
+								<a href="#" class="depth1 toeic">토익</a>
+								<ul class="dangi_sub_gnb notice_box sub01">
+									<li><a href="#">토익</a></li>
+									<li><a href="#">토스/오픽</a></li>
+									<li><a href="#">토플</a></li>
+									<li><a href="#">디즈니 회화</a></li>
+									<li><a href="#">중국어</a></li>
+									<li><a href="#">일본어</a></li>
+									<li><a href="#">텝스</a></li>
+									<li><a href="#">아이엘츠</a></li>
+									<li><a href="#">세마디영어</a></li>
+									<li><a href="#">승무원영어</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">
+									실시간 출제예측
+									<span class="img_badge"><img src="img/img_speech_bubble_180618.gif" alt="매달 최신 트렌드 반영"></span>
+								</a>
+								<ul class="dangi_sub_gnb notice_box sub02">
+									<li><a href="#">RA모의고사</a></li>
+									<li><a href="#">기출분석센터</a></li>
+									<li><a href="#">인공지능 STELLA</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">정답서비스</a>
+								<ul class="dangi_sub_gnb notice_box sub03">
+									<li><a href="#">실시간 채점</a></li>
+									<li><a href="#">LIVE해설강의</a></li>
+									<li><a href="#">커뮤니티</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">수강신청</a>
+								<ul class="dangi_sub_gnb notice_box sub04">
+									<li><a href="#">수강신청</a></li>
+									<li><a href="#">9월 신규강좌</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">영단기 선생님</a>
+								<ul class="dangi_sub_gnb notice_box_depth sub05 clearfix">
+									<li>
+										<dl class="depth2_list line2 clearfix">
+											<dt>토익</dt>
+											<dd><a href="#">정재현</a></dd>
+											<dd><a href="#">유수연</a></dd>
+											<dd><a href="#">권오경</a></dd>
+											<dd><a href="#">린한</a></dd>
+											<dd><a href="#">조현주</a></dd>
+											<dd><a href="#">홍진걸</a></dd>
+											<dd><a href="#" class="new">제이드김</a></dd>
+											<dd><a href="#">유정연</a></dd>
+											<dd><a href="#">하태경</a></dd>
+											<dd><a href="#">길지연</a></dd>
+											<dd><a href="#">김선경</a></dd>
+											<dd><a href="#">구원</a></dd>
+											<dd><a href="#">김성은</a></dd>
+											<dd><a href="#">방재운</a></dd>
+											<dd><a href="#">이영수</a></dd>
+											<dd><a href="#">노아</a></dd>
+											<dd><a href="#">댄리</a></dd>
+											<dd><a href="#">니콜</a></dd>
+											<dd><a href="#">손태진</a></dd>
+											<dd><a href="#">제이</a></dd>
+											<dd><a href="#">김대균</a></dd>
+											<dd><a href="#">박재형</a></dd>
+											<dd><a href="#">이주은</a></dd>
+											<dd><a href="#">수잔김</a></dd>
+											<dd><a href="#">에릭최</a></dd>
+											<dd><a href="#">차성희</a></dd>
+											<dd><a href="#">게임토익</a></dd>
+											<dd><a href="#">클레어</a></dd>
+											<dd><a href="#">카이</a></dd>
+											<dd><a href="#">안우엽</a></dd>
+											<dd><a href="#">최영근</a></dd>
+											<dd><a href="#">제인리</a></dd>
+											<dd><a href="#">양영정</a></dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="depth2_list">
+											<dt>토플</dt>
+											<dd><a href="#">신은미</a></dd>
+											<dd><a href="#">박세연</a></dd>
+											<dd><a href="#" class="new">크리스틴한</a></dd>
+											<dd><a href="#">신화식</a></dd>
+											<dd><a href="#">빅토리아신</a></dd>
+											<dd><a href="#">세라원</a></dd>
+											<dd><a href="#">수리</a></dd>
+											<dd><a href="#">최종훈</a></dd>
+											<dd><a href="#">민상홍</a></dd>
+											<dd><a href="#">조나단 김</a></dd>
+											<dd><a href="#">권민경</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>토익스피킹</dt>
+											<dd><a href="#">제이정</a></dd>
+											<dd><a href="#">그웬</a></dd>
+											<dd><a href="#" class="new">빅토리아장</a></dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="depth2_list">
+											<dt>오픽</dt>
+											<dd><a href="#">지니강</a></dd>
+											<dd><a href="#">세라김</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>회화/스피킹</dt>
+											<dd><a href="#">문성용</a></dd>
+											<dd><a href="#">김성은</a></dd>
+											<dd><a href="#" class="new">하태경</a></dd>
+											<dd><a href="#" class="new">박소연</a></dd>
+											<dd><a href="#" class="new">김태윤</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>아이엘츠</dt>
+											<dd><a href="#">홍승연</a></dd>
+											<dd><a href="#">댄리</a></dd>
+											<dd><a href="#" class="new">세라원</a></dd>
+											<dd><a href="#" class="new">헤일리유</a></dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="depth2_list">
+											<dt>텝스</dt>
+											<dd><a href="#">최진성</a></dd>
+											<dd><a href="#">정일상</a></dd>
+											<dd><a href="#">하태경</a></dd>
+											<dd><a href="#">마크킴</a></dd>
+											<dd><a href="#">나탈리</a></dd>
+											<dd><a href="#">이정로</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>기초영어</dt>
+											<dd><a href="#">전홍철</a></dd>
+											<dd><a href="#">조은정</a></dd>
+											<dd><a href="#" class="new">홍진걸</a></dd>
+											<dd><a href="#" class="new">권오경</a></dd>
+											<dd><a href="#" class="new">김성은</a></dd>
+											<dd><a href="#">조현주</a></dd>
+											<dd><a href="#">제이드김</a></dd>
+											<dd><a href="#">제이</a></dd>
+											<dd><a href="#">송현석</a></dd>
+											<dd><a href="#">최진성</a></dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="depth2_list">
+											<dt>취업(대기업 인적성)</dt>
+											<dd><a href="#">빠꼼이</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>승무원영어</dt>
+											<dd><a href="#">최희진</a></dd>
+											<dd><a href="#">위드제니</a></dd>
+										</dl>
+									</li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">교재구매</a>
+								<ul class="dangi_sub_gnb notice_box_depth sub06 clearfix">
+									<li>
+										<ul class="book_link_list">
+											<li><a href="#">교재구매 ></a></li>
+											<li><a href="#">MP3/해설집 다운 ></a></li>
+											<li><a href="#">토익 보카생성기 ></a></li>
+											<li><a href="#">뉴텝스 보카생성기 ></a></li>
+										</ul>
+										<dl class="depth2_list clearfix mt">
+											<dt>토익</dt>
+											<dd><a href="#">영단기 토익 VOCA</a></dd>
+											<dd><a href="#">영단기 영문법 스타트</a></dd>
+											<dd><a href="#">영단기 토익 입문서</a></dd>
+											<dd><a href="#">영단기 토익 20일 속성</a></dd>
+											<dd><a href="#">영단기 토익 기본서</a></dd>
+											<dd><a href="#">영단기 토익 기술서</a></dd>
+											<dd><a href="#">영단기 빈출모의고사</a></dd>
+											<dd><a href="#">영단기 실전 1000제</a></dd>
+											<dd><a href="#">정재현 RC실전 1000제</a></dd>
+											<dd><a href="#">유수연 LC실전 1000제</a></dd>
+											<dd><a href="#">영단기 출제예측 360제</a></dd>
+											<dd><a href="#">영단기 다이렉트 700+</a></dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="depth2_list">
+											<dt>토플</dt>
+											<dd><a href="#">TOEIC 입문서<br>(70+목표)</a></dd>
+											<dd><a href="#" class="new">TOEIC 기본서<br>(90+목표)</a></dd>
+											<dd><a href="#">TOEIC 실전서<br>(100+목표)</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>토익스피킹</dt>
+											<dd><a href="#">토익스피킹<br>기본서</a></dd>
+											<dd><a href="#">토익스피킹<br>실전모의고사</a></dd>
+											<dd><a href="#">토익스피킹<br>기술서</a></dd>
+										</dl>
+										<dl class="depth2_list mt">
+											<dt>오픽</dt>
+											<dd><a href="#">오픽<br>기본서</a></dd>
+											<dd><a href="#">오픽<br>실전모의고사</a></dd>
+										</dl>
+									</li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">LIVE자료</a>
+								<ul class="dangi_sub_gnb notice_box sub07">
+									<li><a href="#">영TV LIVE</a></li>
+									<li><a href="#">영단기 온라인 스터디</a></li>
+									<li><a href="#">무료자료실</a></li>
+									<li><a href="#">고득점 꿀Tip</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">공지사항/후기</a>
+								<ul class="dangi_sub_gnb notice_box sub08">
+									<li><a href="#">영단기 공지사항</a></li>
+									<li><a href="#">선생님 공지사항</a></li>
+									<li><a href="#">강좌후기</a></li>
+									<li><a href="#">학습질문</a></li>
+									<li><a href="#">학습자료실</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">이벤트</a>
+								<ul class="dangi_sub_gnb notice_box sub09">
+									<li><a href="#">인강 이벤트</a></li>
+									<li><a href="#">어학원 이벤트</a></li>
+									<li><a href="#">당첨자 발표</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+							<li>
+								<a href="#" class="depth1">
+									오프라인 학원
+									<span class="img_badge"><img src="img/bubble_off_refund.png" alt="혁명 토익학원 무료선언!"></span>
+								</a>
+								<ul class="dangi_sub_gnb notice_box sub10">
+									<li><a href="#">영단기 강남학원</a></li>
+									<li><a href="#">영단기 부산학원</a></li>
+								</ul>
+								<span class="dummy"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // title_wrap -->
+				
+				<!-- txt_cont -->
+				<div id="txt_cont" class="txt_cont" tabindex="0">
+					<p class="txt_1">
+						<span>단 30일 만에 목표점수 달성, 가능합니다.</span><br>
+						영단기의 정규 클래스가 더욱 더 놀라워졌습니다.<br><br>
+						실제 토익 기출문제를 바탕으로 개념완성 과정 및 문제풀이 과정으로<br>
+						<span>30일만에 목표점수를 달성</span>할 수 있도록 설계된 커리큘럼<br>
+						영단기 1등 선생님*과 토익 만점자의 <span>비법자료</span>와 <span>비밀모임</span>은 물론,<br>
+						학습 동기부여를 위한 <span>200% 환급</span> 퀘스트까지.<br><br>
+						1등 영단기**가 여러분의 <span>단기 목표 완성</span>을 책임집니다.
+					</p>
+					<p class="txt_2">
+						*) 영단기 1위 강사진: 영단기 토익 매출 1위 정재현: *2018년 12월 ~2019년 5월 에스티유니타스 내 영단기 강사 총 토익 매출 1위,<br>
+						영단기 토익LC 강좌 인기도 1위 유수연(18년 10월~19년 1월 영단기 프리패스/환급반/단과 상품 내 강좌 인기도 1위)<br>
+						**)1등 영단기: 2019 대한민국 퍼스트브랜드 대상 수상 온라인 외국어 교육부문 1위 수상<br>
+						영단기의 Best of Best 컨텐츠로 이미 수많은 회원들이 목표점수를 달성했습니다.<br>
+						단 30일 만에 토익 끝내기
+					</p>
+					<p class="txt_3">영단기의 Best of Best 컨텐츠로 이미 수많은 회원들이 목표점수를 달성했습니다.</p>
+					<p class="txt_4">단 30일 만에 토익 끝내기</p>
+					<p class="txt_1">
+						<span>단 30일 만에 목표점수 달성, 가능합니다.</span><br>
+						영단기의 정규 클래스가 더욱 더 놀라워졌습니다.<br><br>
+						실제 토익 기출문제를 바탕으로 개념완성 과정 및 문제풀이 과정으로<br>
+						<span>30일만에 목표점수를 달성</span>할 수 있도록 설계된 커리큘럼<br>
+						영단기 1등 선생님*과 토익 만점자의 <span>비법자료</span>와 <span>비밀모임</span>은 물론,<br>
+						학습 동기부여를 위한 <span>200% 환급</span> 퀘스트까지.<br><br>
+						1등 영단기**가 여러분의 <span>단기 목표 완성</span>을 책임집니다.
+					</p>
+					<p class="txt_2">
+						*) 영단기 1위 강사진: 영단기 토익 매출 1위 정재현: *2018년 12월 ~2019년 5월 에스티유니타스 내 영단기 강사 총 토익 매출 1위,<br>
+						영단기 토익LC 강좌 인기도 1위 유수연(18년 10월~19년 1월 영단기 프리패스/환급반/단과 상품 내 강좌 인기도 1위)<br>
+						**)1등 영단기: 2019 대한민국 퍼스트브랜드 대상 수상 온라인 외국어 교육부문 1위 수상<br>
+						영단기의 Best of Best 컨텐츠로 이미 수많은 회원들이 목표점수를 달성했습니다.<br>
+						단 30일 만에 토익 끝내기
+					</p>
+					<p class="txt_3">영단기의 Best of Best 컨텐츠로 이미 수많은 회원들이 목표점수를 달성했습니다.</p>
+					<p class="txt_4">단 30일 만에 토익 끝내기</p>
+				</div>
+				<!-- // txt_cont -->
+			</div>
+			<!-- // content_wrap -->
+		</div>
+	</div>
+	<!-- // container --> 
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('input, textarea').placeholder()
+	})
+</script>
+
+</body>
+</html>
